@@ -13,10 +13,11 @@
 
 $url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 $amount = 10;
-$partya = 0720106420;
+$partya = 254720106420;
 $partyb = 174379;
 $callback = "makaoeasy.com";
 $transdef = "Please pay " . $amount . "to Makao Investmets.";
+$transtype = "CustomerPayBillOnline";
 
 
 $Timestamp = strtotime("now");
@@ -36,7 +37,7 @@ $makao = "MAKAO-Ref-";
 $makaref = $makao.$value;
 //end generating random number
 
-$shortcode2 = 600000;
+$shortcode2 = 174379;
 
 //Initiate cURL.
 $ch = curl_init($url);
@@ -46,14 +47,14 @@ $ch = curl_init($url);
 $jsonData = array('BusinessShortCode' => '',
     'Password' => $password,
     'Timestamp' => $Timestamp,
-    'TransactionType' => 'CustomerPayBillOnline',
+    'TransactionType' => $transtype,
     'Amount' => $amount,
     'PartyA' => $partya,
     'PartyB' => $partyb,
     'PhoneNumber' => $partya,
     'CallBackURL' => $callback,
     'AccountReference' => $makaref,
-    'TransactionDesc' => '');
+    'TransactionDesc' => $transdef);
 
 //Encode the array into JSON.
 $jsonDataEncoded = json_encode($jsonData);
@@ -63,13 +64,15 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 //Tell cURL that we want to send a POST request.
 curl_setopt($ch, CURLOPT_POST, 1);
 
+//curl_setopt($curl, CURLOPT_POST, true);
+
 //Attach our encoded JSON string to the POST fields.
 curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
 
 //$headers = ['Content-Type: application/json', 'Bearer X1Tcq50JkDBGct4Kg8UcXtzULiFh ' ];
 
 //Set the content type to application/json
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization: Bearer X1Tcq50JkDBGct4Kg8UcXtzULiFh '));
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer yWK6RP3WJHGaRJnpXdaPsx0AoWDd '));
 
 //Execute the request
 $result = curl_exec($ch);
