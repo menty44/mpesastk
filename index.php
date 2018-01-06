@@ -15,12 +15,12 @@ $url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 $amount = 10;
 $partya = 254720106420;
 $partyb = 174379;
-$callback = "makaoeasy.com";
-$transdef = "Please pay " . $amount . "to Makao Investmets.";
+$callback = "https://makaoeasy.com/";
+$transdef = "Please pay KSH " . $amount . " to Makao Investmets.";
 $transtype = "CustomerPayBillOnline";
 
-
-$Timestamp = strtotime("now");
+$date = new DateTime();
+$Timestamp = date("Ymdhis");
 
 $Consumer_Key = "Gxg0Thwl5rDAHh1swnXjMDCS836M8nIj";
 $Consumer_Secret =	"PoxJvbGbT2f3gNno";
@@ -44,7 +44,7 @@ $ch = curl_init($url);
 
 //The JSON data.
 
-$jsonData = array('BusinessShortCode' => '',
+$jsonData = array('BusinessShortCode' => $partyb,
     'Password' => $password,
     'Timestamp' => $Timestamp,
     'TransactionType' => $transtype,
@@ -55,6 +55,12 @@ $jsonData = array('BusinessShortCode' => '',
     'CallBackURL' => $callback,
     'AccountReference' => $makaref,
     'TransactionDesc' => $transdef);
+
+print_r($jsonData) ;
+
+
+
+
 
 //Encode the array into JSON.
 $jsonDataEncoded = json_encode($jsonData);
@@ -72,7 +78,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
 //$headers = ['Content-Type: application/json', 'Bearer X1Tcq50JkDBGct4Kg8UcXtzULiFh ' ];
 
 //Set the content type to application/json
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer yWK6RP3WJHGaRJnpXdaPsx0AoWDd '));
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer GTck9UOeBAk5wGn1AGdWhR1wILmM '));
 
 //Execute the request
 $result = curl_exec($ch);
