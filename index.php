@@ -15,8 +15,9 @@ $url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 $amount = 10;
 $partya = 254720106420;
 $partyb = 174379;
-$callback = "https://makaoeasy.com/";
-$transdef = "Please pay KSH " . $amount . " to Makao Investmets.";
+$callback = "http://dev.matrixcyber.co.ke/cb.php";
+$transdef = "Please Pay " . $amount . " to Makao Investments.";
+$def = "test";
 $transtype = "CustomerPayBillOnline";
 
 $date = new DateTime();
@@ -29,11 +30,11 @@ $passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
 $password = base64_encode($partyb.$passkey.$Timestamp);
 
 //start generating random number
-$x = 4; // Amount of digits
+$x = 2; // Amount of digits
 $min = pow(10,$x);
 $max = pow(10,$x+1)-1;
 $value = rand($min, $max);
-$makao = "MAKAO-Ref-";
+$makao = "MAK-Ref-";
 $makaref = $makao.$value;
 //end generating random number
 
@@ -44,17 +45,17 @@ $ch = curl_init($url);
 
 //The JSON data.
 
-$jsonData = array('BusinessShortCode' => $partyb,
-    'Password' => $password,
-    'Timestamp' => $Timestamp,
-    'TransactionType' => $transtype,
-    'Amount' => $amount,
-    'PartyA' => $partya,
-    'PartyB' => $partyb,
-    'PhoneNumber' => $partya,
-    'CallBackURL' => $callback,
-    'AccountReference' => $makaref,
-    'TransactionDesc' => $transdef);
+$jsonData = array("BusinessShortCode" => $partyb,
+    "Password" => $password,
+    "Timestamp" => $Timestamp,
+    "TransactionType" => $transtype,
+    "Amount" => $amount,
+    "PartyA" => $partya,
+    "PartyB" => $partyb,
+    "PhoneNumber" => $partya,
+    "CallBackURL" => $callback,
+    "AccountReference" => $makaref,
+    "TransactionDesc" => "test");
 
 print_r($jsonData) ;
 
