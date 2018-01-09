@@ -9,16 +9,19 @@
  * This is a source code for stk push Mpesa bridge
  */
 
+//require 'conn.php';
+
 //echo "hello world";
 
 $url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
-$amount = 10;
+$amount = 1;
 $partya = 254720106420;
 $partyb = 174379;
-$callback = "http://dev.matrixcyber.co.ke/cb.php";
+$callback = "http://52badc87.ngrok.io/mpesa/callback.php";
 $transdef = "Please Pay " . $amount . " to Makao Investments.";
 $def = "test";
 $transtype = "CustomerPayBillOnline";
+$makaof = "MAKAO";
 
 $date = new DateTime();
 $Timestamp = date("Ymdhis");
@@ -30,12 +33,12 @@ $passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
 $password = base64_encode($partyb.$passkey.$Timestamp);
 
 //start generating random number
-$x = 2; // Amount of digits
+$x = 4; // Amount of digits
 $min = pow(10,$x);
 $max = pow(10,$x+1)-1;
 $value = rand($min, $max);
-$makao = "MAK-Ref-";
-$makaref = $makao.$value;
+$makao = "MAKAOLTD";
+$makaref = $makao;
 //end generating random number
 
 $shortcode2 = 174379;
@@ -55,12 +58,23 @@ $jsonData = array("BusinessShortCode" => $partyb,
     "PhoneNumber" => $partya,
     "CallBackURL" => $callback,
     "AccountReference" => $makaref,
-    "TransactionDesc" => "test");
+    "TransactionDesc" => $makaof);
 
 print_r($jsonData) ;
 
+$db = pg_connect("host=localhost port=5432 dbname=mpesabridge user=postgres password=postgres");
+//$query = "INSERT INTO sender_details VALUES ('$_POST[bookid]','$_POST[book_name]','$_POST[price]','$_POST[dop]')";
+$query = "INSERT INTO sender_details VALUES ( '$value',
+                                              '$partyb',
+                                              '$Timestamp',
+                                              '$transtype]',
+                                              '$amount',
+                                              '$partya',
+                                              '$partyb',
+                                              '$makaref',
+                                              '$makaof')";
 
-
+$result = pg_query($query);
 
 
 //Encode the array into JSON.
@@ -79,7 +93,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
 //$headers = ['Content-Type: application/json', 'Bearer X1Tcq50JkDBGct4Kg8UcXtzULiFh ' ];
 
 //Set the content type to application/json
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer GTck9UOeBAk5wGn1AGdWhR1wILmM '));
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer 6u80npC6iAeCQnLm3ypulnBT4fle '));
 
 //Execute the request
 $result = curl_exec($ch);
@@ -89,7 +103,11 @@ echo $result;
 // Closing
 curl_close($ch);
 
-//$data = json_decode($result);
+$data = json_decode($result, true);
+
+//echo "###############";
+//echo $data['BusinessShortCode'];
+//echo "################";
 
 //$arr = json_decode($result, true);
 //

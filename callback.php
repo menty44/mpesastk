@@ -14,6 +14,12 @@ $data = array(
 
 echo json_encode($data);
 
+
+
+// Convert JSON string to Array
+echo $someArray = json_encode($data);
+print_r($someArray);        // Dump all data of the Array
+
 $file = 'log.txt';
 $fh = fopen($file, 'a');
 fwrite($fh, "\n====".date("d-m-Y H:i:s")."====\n");

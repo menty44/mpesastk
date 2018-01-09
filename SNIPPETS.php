@@ -30,4 +30,4 @@
 		$response = $this->submit_request($url, $data); //Submit Request
 		return $response;
 	}
-?>
+
