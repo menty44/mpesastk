@@ -17,7 +17,7 @@ $url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 $amount = 1;
 $partya = 254720106420;
 $partyb = 174379;
-$callback = "http://52badc87.ngrok.io/mpesa/callback.php";
+$callback = "http://653af374.ngrok.io/callback.php";
 $transdef = "Please Pay " . $amount . " to Makao Investments.";
 $def = "test";
 $transtype = "CustomerPayBillOnline";
@@ -62,19 +62,48 @@ $jsonData = array("BusinessShortCode" => $partyb,
 
 print_r($jsonData) ;
 
-$db = pg_connect("host=localhost port=5432 dbname=mpesabridge user=postgres password=postgres");
-//$query = "INSERT INTO sender_details VALUES ('$_POST[bookid]','$_POST[book_name]','$_POST[price]','$_POST[dop]')";
-$query = "INSERT INTO sender_details VALUES ( '$value',
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "mpesabridge";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "INSERT INTO sender_details (businesscode, mpestimestamp, transactiontype, amount, sendernumber, paybill, accountref ,transdec)
+    VALUES ( 
                                               '$partyb',
                                               '$Timestamp',
-                                              '$transtype]',
+                                              '$transtype',
                                               '$amount',
                                               '$partya',
                                               '$partyb',
                                               '$makaref',
                                               '$makaof')";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    echo "New record created successfully";
+}
+catch(PDOException $e)
+{
+    echo $sql . "<br>" . $e->getMessage();
+}
 
-$result = pg_query($query);
+//$db = pg_connect("host=localhost port=5432 dbname=mpesabridge user=postgres password=postgres");
+////$query = "INSERT INTO sender_details VALUES ('$_POST[bookid]','$_POST[book_name]','$_POST[price]','$_POST[dop]')";
+//$query = "INSERT INTO sender_details
+// VALUES ( '$value',
+//                                              '$partyb',
+//                                              '$Timestamp',
+//                                              '$transtype]',
+//                                              '$amount',
+//                                              '$partya',
+//                                              '$partyb',
+//                                              '$makaref',
+//                                              '$makaof')";
+//
+//$result = pg_query($query);
 
 
 //Encode the array into JSON.
@@ -93,7 +122,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
 //$headers = ['Content-Type: application/json', 'Bearer X1Tcq50JkDBGct4Kg8UcXtzULiFh ' ];
 
 //Set the content type to application/json
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer 6u80npC6iAeCQnLm3ypulnBT4fle '));
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Authorization:Bearer oz4aEJNLVAfA7p1hJbSMBInGDB03 '));
 
 //Execute the request
 $result = curl_exec($ch);
