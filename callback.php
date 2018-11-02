@@ -6,12 +6,19 @@
  * Time: 12:56 PM
  */
 
+$data = json_decode($data);
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "mpesabridge";
+
 //
 //$data = array(
 //    'ResultCode' => 0,
 //    'ResultDesc' => 'Success'
 //);
-//$freddy = "{
+//$data = "{
 //    \"Body\": {
 //        \"stkCallback\": {
 //            \"MerchantRequestID\": \"4558-468965-1\",
@@ -44,17 +51,17 @@
 //        }
 //    }
 //}";
-
-echo json_encode($data);
-
-
-
-// Convert JSON string to Array
-echo $someArray = json_encode($data);
-print_r($someArray);        // Dump all data of the Array
+$data = json_decode($data);
+//echo json_encode($data);
 
 
-$fred = json_decode($data, true);
+
+//// Convert JSON string to Array
+//echo $someArray = json_encode($data);
+//print_r($someArray);        // Dump all data of the Array
+
+
+$fred = json_decode($data);
 
 print_r($fred);
 echo "###################### response ###############################".PHP_EOL;
@@ -66,42 +73,72 @@ $one = $fred["Body"]["stkCallback"]["MerchantRequestID"];
 $two = $fred["Body"]["stkCallback"]["CheckoutRequestID"];
 $three = $fred["Body"]["stkCallback"]["ResultCode"];
 $four = $fred["Body"]["stkCallback"]["ResultDesc"];
-$five = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][0]["Value"];
+$amount = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][0]["Value"];
+echo "five";
+echo $amount;
 $six = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][1]["Value"];
 $seven = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][2]["Name"];
 $eight = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][3]["Value"];
 $nine = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][4]["Value"];
+//
+//foreach ($fred["Body"] as $key => $value){
+//    $data1 = $value["MerchantRequestID"];
+//    $data2 = $value["CheckoutRequestID"];
+//    $data3 = $value["ResultCode"];
+//    $data4 = $value["ResultDesc"];
+//
+//    echo $data1;
+//    echo $data2;
+//    echo $data3;
+//    echo $data4;
+//
+//    foreach ($fred["Body"]["stkCallback"]["CallbackMetadata"]  as $key => $value){
+//
+//        echo $value[0]['Value'];
+//        echo $value[1]['Value'];
+//        echo $value[2]['Name'];
+//        echo $value[3]['Value'];
+//
+//    }}
 
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "mpesabridge";
+//$five = strval($value[0]['Value']);
+//$six = strval($value[1]['Value']);
+//$seven = strval($value[2]['Name']);
+//$eight = strval($value[3]['Value']);
+//$nine = strval($value[4]['Value']);
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO callback (merchantreqid, checkoutreqid, resultcode, ResultDesc, amount, mpesareceiptnumber, transtype ,transactiondate,phonenumber)
-    VALUES ( 
-                                              '$one',
-                                              '$two',
-                                              '$three',
-                                              '$four',
-                                              '$five',
-                                              '$six',
-                                              '$seven',
-                                              '$eight',
-                                              '$nine')";
-    // use exec() because no results are returned
-    $conn->exec($sql);
-    echo "New record created successfully";
-}
-catch(PDOException $e)
-{
-    echo $sql . "<br>" . $e->getMessage();
-}
+//echo "$$$$ $$$$$ $$$$ $$$$".PHP_EOL;
+//echo $data1;
+//echo $data2;
+//echo $data3;
+//echo $data4;
+//
+//echo $five;
+//echo $six;
+//echo $seven;
+//echo $eight;
+
+
+
+
+
+// try {
+//     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//     // set the PDO error mode to exception
+//     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//     $sql = "INSERT INTO callback ( amount)
+//     VALUES (   '$amount' )";
+//     // use exec() because no results are returned
+//     echo $sql;
+//     $conn->exec($sql);
+//     echo "New record created successfully";
+// }
+// catch(PDOException $e)
+// {
+//     echo $sql . "<br>" . $e->getMessage();
+// }
 
 
 
@@ -176,4 +213,5 @@ $file = 'log.txt';
 $fh = fopen($file, 'a');
 fwrite($fh, "\n====".date("d-m-Y H:i:s")."====\n");
 fwrite($fh, file_get_contents("php://input")."\n");
+
 fclose($fh);

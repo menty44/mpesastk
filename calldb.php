@@ -61,60 +61,67 @@ echo "###################### three ###############################".PHP_EOL;
 //    $saved->msisdn = $value[4][‘Value’];
 //    $saved->save();
 //}
-foreach ($fred["Body"] as $key => $value){
-        $data1 = $value["MerchantRequestID"].PHP_EOL;
-    $data2 = $value["CheckoutRequestID"].PHP_EOL;
-        $data3 = $value["ResultCode"].PHP_EOL;
-            $data4 = $value["ResultDesc"].PHP_EOL;
+//foreach ($fred["Body"] as $key => $value){
+//        $data1 = $value["MerchantRequestID"].PHP_EOL;
+//    $data2 = $value["CheckoutRequestID"].PHP_EOL;
+//        $data3 = $value["ResultCode"].PHP_EOL;
+//            $data4 = $value["ResultDesc"].PHP_EOL;
+//
+//    echo $data1;
+//    echo $data2;
+//    echo $data3;
+//    echo $data4;
+//
+//    foreach ($fred["Body"]["stkCallback"]["CallbackMetadata"]  as $key => $value){
+//
+////    echo $value["MerchantRequestID"].PHP_EOL;
+////    echo $value["CheckoutRequestID"].PHP_EOL;
+////    echo $value["ResultCode"].PHP_EOL;
+////    echo $value["ResultDesc"].PHP_EOL;
+//
+////}
+//
+////foreach ($fred["Body"]["stkCallback"]["CallbackMetadata"]  as $key => $value){
+//    echo $value[0]['Value'].PHP_EOL;
+//    echo $value[1]['Value'].PHP_EOL;
+//    echo $value[2]['Name'].PHP_EOL;
+//    echo $value[3]['Value'].PHP_EOL;
+//
+//}}
 
-    echo $data1;
-    echo $data2;
-    echo $data3;
-    echo $data4;
 
-    foreach ($fred["Body"]["stkCallback"]["CallbackMetadata"]  as $key => $value){
+//
+//$five = $value[0]['Value'].PHP_EOL;
+//$six = $value[1]['Value'].PHP_EOL;
+//$seven = $value[2]['Name'].PHP_EOL;
+//$eight = $value[3]['Value'].PHP_EOL;
+//
+//echo "$$$$ $$$$$ $$$$ $$$$".PHP_EOL;
+//echo $data1;
+//echo $data2;
+//echo $data3;
+//echo $data4;
+//echo $five;
+//echo $six;
+//echo $seven;
+//echo $eight;
 
-//    echo $value["MerchantRequestID"].PHP_EOL;
-//    echo $value["CheckoutRequestID"].PHP_EOL;
-//    echo $value["ResultCode"].PHP_EOL;
-//    echo $value["ResultDesc"].PHP_EOL;
-
-//}
-
-//foreach ($fred["Body"]["stkCallback"]["CallbackMetadata"]  as $key => $value){
-    echo $value[0]['Value'].PHP_EOL;
-    echo $value[1]['Value'].PHP_EOL;
-    echo $value[2]['Name'].PHP_EOL;
-    echo $value[3]['Value'].PHP_EOL;
-
-}}
-
-
-
-$five = $value[0]['Value'].PHP_EOL;
-$six = $value[1]['Value'].PHP_EOL;
-$seven = $value[2]['Name'].PHP_EOL;
-$eight = $value[3]['Value'].PHP_EOL;
-
-echo "$$$$ $$$$$ $$$$ $$$$".PHP_EOL;
-echo $data1;
-echo $data2;
-echo $data3;
-echo $data4;
-echo $five;
-echo $six;
-echo $seven;
-echo $eight;
-
-//$one = $fred["Body"]["stkCallback"]["MerchantRequestID"];
+$one = $fred["Body"]["stkCallback"]["MerchantRequestID"];
+//echo $one;
 //$two = $fred["Body"]["stkCallback"]["CheckoutRequestID"];
 //$three = $fred["Body"]["stkCallback"]["ResultCode"];
 //$four = $fred["Body"]["stkCallback"]["ResultDesc"];
-//$five = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][0]["Value"];
-//$six = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][1]["Value"];
-//$seven = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][2]["Name"];
-//$eight = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][3]["Value"];
-//$nine = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][4]["Value"];
+$five = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][0]["Value"];
+echo $five;
+$six = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][1]["Value"];
+$seven = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][2]["Name"];
+$eight = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][3]["Value"];
+$nine = $fred["Body"]["stkCallback"]["CallbackMetadata"]["Item"][4]["Value"];
+echo $five.PHP_EOL;
+echo $six.PHP_EOL;
+echo $seven.PHP_EOL;
+echo $eight.PHP_EOL;
+echo $nine.PHP_EOL;
 //
 ////print_r($jsonData) ;
 //

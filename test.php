@@ -12,12 +12,22 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 $credentials = base64_encode('Gxg0Thwl5rDAHh1swnXjMDCS836M8nIj:PoxJvbGbT2f3gNno');
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Basic '.$credentials)); //setting a custom header
-curl_setopt($curl, CURLOPT_HEADER, true);
+// curl_setopt($curl, CURLOPT_HEADER, true);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-$curl_response = curl_exec($curl);
+$result = curl_exec($curl);
 
-echo json_decode($curl_response);
+// Decode JSON data to PHP associative array
+$arr = json_decode($result, true);
+
+$tok = $arr["access_token"];
+// Access values from the associative array
+echo $tok;
+
+
+
+
 
 
 

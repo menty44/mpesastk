@@ -226,3 +226,174 @@
 
 ====10-01-2018 19:31:23====
 
+
+====10-01-2018 22:28:05====
+{"Body":{"stkCallback":{"MerchantRequestID":"6153-2294119-1","CheckoutRequestID":"ws_CO_11012018012541198","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB7603RGF"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111012805},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:29:47====
+{"Body":{"stkCallback":{"MerchantRequestID":"4556-961055-1","CheckoutRequestID":"ws_CO_11012018012845875","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB6603V1U"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111012946},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:31:19====
+{"Body":{"stkCallback":{"MerchantRequestID":"31898-172823-1","CheckoutRequestID":"ws_CO_11012018013019502","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB7603X4V"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111013118},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:32:08====
+{"Body":{"stkCallback":{"MerchantRequestID":"31907-172838-1","CheckoutRequestID":"ws_CO_11012018013107632","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB8603VQW"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111013207},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:32:37====
+{"Body":{"stkCallback":{"MerchantRequestID":"4555-961140-1","CheckoutRequestID":"ws_CO_11012018013137710","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB3603XJR"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111013237},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:41:09====
+
+
+====10-01-2018 22:43:55====
+
+
+====10-01-2018 22:46:16====
+{"Body":{"stkCallback":{"MerchantRequestID":"4556-961586-1","CheckoutRequestID":"ws_CO_11012018014516351","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB1604FND"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111014615},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:52:56====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2295079-1","CheckoutRequestID":"ws_CO_11012018015145826","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB6604O3O"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111015255},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 22:56:37====
+{"Body":{"stkCallback":{"MerchantRequestID":"6158-2295218-1","CheckoutRequestID":"ws_CO_11012018015536540","ResultCode":1032,"ResultDesc":"[STK_CB - ]Request cancelled by user"}}}
+
+====10-01-2018 22:59:25====
+{"Body":{"stkCallback":{"MerchantRequestID":"4553-961970-1","CheckoutRequestID":"ws_CO_11012018015825614","ResultCode":1032,"ResultDesc":"[STK_CB - ]Request cancelled by user"}}}
+
+====10-01-2018 23:02:25====
+{"Body":{"stkCallback":{"MerchantRequestID":"31903-173860-1","CheckoutRequestID":"ws_CO_11012018020002974","ResultCode":1032,"ResultDesc":"[STK_CB - ]Request cancelled by user"}}}
+
+====10-01-2018 23:03:48====
+{"Body":{"stkCallback":{"MerchantRequestID":"4556-962098-1","CheckoutRequestID":"ws_CO_11012018020247838","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB460500I"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111020348},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:05:42====
+{"Body":{"stkCallback":{"MerchantRequestID":"6158-2295544-1","CheckoutRequestID":"ws_CO_11012018020320850","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB560534R"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111020541},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:07:04====
+{"Body":{"stkCallback":{"MerchantRequestID":"6158-2295586-1","CheckoutRequestID":"ws_CO_11012018020603295","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB56055BX"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111020704},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:09:58====
+{"Body":{"stkCallback":{"MerchantRequestID":"4555-962277-1","CheckoutRequestID":"ws_CO_11012018020737121","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB76059GB"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111020957},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:10:51====
+{"Body":{"stkCallback":{"MerchantRequestID":"6159-2295727-1","CheckoutRequestID":"ws_CO_11012018020949121","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB8605BKG"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111021051},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:11:58====
+
+
+====10-01-2018 23:16:47====
+{"Body":{"stkCallback":{"MerchantRequestID":"4558-962465-1","CheckoutRequestID":"ws_CO_11012018021422024","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB5605LZN"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111021643},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:17:50====
+
+
+====10-01-2018 23:20:46====
+{"Body":{"stkCallback":{"MerchantRequestID":"4557-962576-1","CheckoutRequestID":"ws_CO_11012018021945257","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB4605QCA"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111022045},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:21:16====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2296101-1","CheckoutRequestID":"ws_CO_11012018021855533","ResultCode":2001,"ResultDesc":"[MpesaCB - ]The initiator information is invalid."}}}
+
+====10-01-2018 23:21:44====
+{"Body":{"stkCallback":{"MerchantRequestID":"4555-962597-1","CheckoutRequestID":"ws_CO_11012018022049910","ResultCode":1001,"ResultDesc":"[STK_CB - ]Unable to lock subscriber, a transaction is already in process for the current subscriber"}}}
+
+====10-01-2018 23:24:31====
+
+
+====10-01-2018 23:24:32====
+
+
+====10-01-2018 23:24:34====
+{"Body":{"stkCallback":{"MerchantRequestID":"31893-174450-1","CheckoutRequestID":"ws_CO_11012018022038398","ResultCode":1037,"ResultDesc":"[STK_CB - ]DS timeout."}}}
+
+====10-01-2018 23:27:13====
+{"Body":{"stkCallback":{"MerchantRequestID":"4557-962755-1","CheckoutRequestID":"ws_CO_11012018022612158","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB1605Z73"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111022713},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:31:05====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2296452-1","CheckoutRequestID":"ws_CO_11012018023005317","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB4606066"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111023104},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====10-01-2018 23:32:19====
+{"Body":{"stkCallback":{"MerchantRequestID":"4553-962896-1","CheckoutRequestID":"ws_CO_11012018022957070","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB060620G"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111023218},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:14:35====
+{"Body":{"stkCallback":{"MerchantRequestID":"31901-191421-1","CheckoutRequestID":"ws_CO_11012018091212166","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB862HK4O"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111091436},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:16:56====
+
+
+====11-01-2018 06:17:36====
+
+
+====11-01-2018 06:18:29====
+
+
+====11-01-2018 06:18:56====
+
+
+====11-01-2018 06:19:16====
+
+
+====11-01-2018 06:20:11====
+
+
+====11-01-2018 06:21:46====
+
+
+====11-01-2018 06:22:57====
+{"Body":{"stkCallback":{"MerchantRequestID":"4553-978792-1","CheckoutRequestID":"ws_CO_11012018092036707","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB562NN8N"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111092257},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:25:11====
+{"Body":{"stkCallback":{"MerchantRequestID":"4551-978931-1","CheckoutRequestID":"ws_CO_11012018092411868","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB962P9VB"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111092512},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:28:16====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2315500-1","CheckoutRequestID":"ws_CO_11012018092716362","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB562RJ83"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111092816},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:29:12====
+
+
+====11-01-2018 06:31:54====
+
+
+====11-01-2018 06:32:16====
+
+
+====11-01-2018 06:32:17====
+
+
+====11-01-2018 06:34:22====
+{"Body":{"stkCallback":{"MerchantRequestID":"31899-192742-1","CheckoutRequestID":"ws_CO_11012018093321797","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB862VYR8"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111093422},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:35:19====
+
+
+====11-01-2018 06:36:02====
+
+
+====11-01-2018 06:42:13====
+{"Body":{"stkCallback":{"MerchantRequestID":"6153-2316462-1","CheckoutRequestID":"ws_CO_11012018093953073","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB9631RJ3"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111094213},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:43:43====
+{"Body":{"stkCallback":{"MerchantRequestID":"6158-2316564-1","CheckoutRequestID":"ws_CO_11012018094243798","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB0632UW2"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111094344},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:44:42====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2316630-1","CheckoutRequestID":"ws_CO_11012018094342760","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB5633LNT"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111094443},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:47:58====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2316860-1","CheckoutRequestID":"ws_CO_11012018094536270","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB4635ZHS"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111094758},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:49:28====
+{"Body":{"stkCallback":{"MerchantRequestID":"6155-2316962-1","CheckoutRequestID":"ws_CO_11012018094826808","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB8637282"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111094928},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:50:04====
+{"Body":{"stkCallback":{"MerchantRequestID":"6158-2317008-1","CheckoutRequestID":"ws_CO_11012018094743211","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB5637IFL"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111095004},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:51:50====
+{"Body":{"stkCallback":{"MerchantRequestID":"31901-193906-1","CheckoutRequestID":"ws_CO_11012018095050062","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB0638SS2"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111095150},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====11-01-2018 06:53:02====
+{"Body":{"stkCallback":{"MerchantRequestID":"4555-980685-1","CheckoutRequestID":"ws_CO_11012018095041144","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"MAB1639P3P"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180111095303},{"Name":"PhoneNumber","Value":254720106420}]}}}}
+
+====14-01-2018 17:59:20====
+
+
+====08-02-2018 16:43:19====
+{"Body":{"stkCallback":{"MerchantRequestID":"9676-320057-1","CheckoutRequestID":"ws_CO_08022018194243102","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":10.00},{"Name":"MpesaReceiptNumber","Value":"MB84N2TDW0"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20180208194318},{"Name":"PhoneNumber","Value":254720106420}]}}}}
